@@ -81,11 +81,15 @@ Signer/
 
 ---
 
-## [AUTSL Dataset](https://cvml.ankara.edu.tr/datasets/)
-Ankara University Turkish Sign Language Dataset (AUTSL) is a large-scale, multimode dataset that contains isolated Turkish sign videos. It contains 226 signs that are performed by 43 different signers. There are 38,336 video samples in total. The samples are recorded using Microsoft Kinect v2 in RGB, depth and skeleton formats. We apply some clipping and resizing operations to RGB and depth data and provide them with the resolution of 512×512. The skeleton data contains spatial coordinates, i.e. (x, y), of the 25 junction points on the signer body that are aligned with 512×512 data.
+## 🗂️ Dataset
+We used the **AUTSL Dataset**.  
 
-We have only used the RGB format and choosing 26 Glosses from them, We have reached 91 Top-1 accuracy in these glosses, that took about 2 weeks to train in kaggle on only these glosses
+For this project, we used only the RGB format and selected 26 glosses. The model achieved a **Top-1 accuracy of 91%** on these glosses. Training took approximately **2 weeks on Kaggle** using only this subset.
+
 Glosses are:
+Ankara University Turkish Sign Language Dataset (AUTSL) is a large-scale, multimode dataset that contains isolated Turkish sign videos. It contains 226 signs that are performed by 43 different signers. There are 38,336 video samples in total. The samples are recorded using Microsoft Kinect v2 in RGB, depth and skeleton formats. We apply some clipping and resizing operations to RGB and depth data and provide them with the resolution of 512×512. The skeleton data contains spatial coordinates, i.e. (x, y), of the 25 junction points on the signer body that are aligned with 512×512 data. You can access it from there [website](https://cvml.ankara.edu.tr/datasets/) 
+
+**Selected Glosses**
 -    0: 'accident'
 -    1: 'always'
 -    2: 'apologize'
@@ -113,6 +117,10 @@ Glosses are:
 -    24: 'who'
 -    25: 'why'
 ---
+## 💾 Model Weights
+You can also acess the models weights directly from bellow
+- [Base Model](https://drive.google.com/file/d/1sxP21c_K9xSxBYZEs9OLeDb_q6wTKvmA/view?usp=drive_link)
+- [Boundary Model](https://drive.google.com/file/d/1zP3cwPmDAOkSrzUbLREGdenredUT7ZH7/view?usp=sharing)
 
 ## 🤝 Contributing
 
@@ -129,4 +137,4 @@ This project is licensed under the MIT License, allowing free use, modification,
 ## 👤 Author
 
 * **Magdi Waleed** – [GitHub](https://github.com/MagdiWaleed) | [LinkedIn](https://www.linkedin.com/in/magdi-waleed) | [Gmail](m.w.m.khalafallah@gmail.com)
-* **For More Details**: [documentation.pdf](https://github.com/user-attachments/files/22059116/documentation.pdf)
+* **For More Details**: [documentation.pdf](https://github.com/user-attachments/files/22059116/documentation.pdf) [presentation](https://docs.google.com/presentation/d/19rWTwuror2tRcP7y1YKw8v0GyURtAlQZ/edit?usp=sharing&ouid=113932713329647084011&rtpof=true&sd=true)
