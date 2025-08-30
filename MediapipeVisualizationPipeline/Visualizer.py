@@ -6,8 +6,8 @@ from .FeaturesExtractorFromImage import FeaturesExtractorFromImage
 from .MediapipeFeatureExtractor import MediapipeFeaturesExtractor
 from .VideoProcessor import ProcessVideo
 
-class Visualizer():
-    def __init__(self,visualize=False,frames_size = (512,512)):
+class VisualizationPipeline():
+    def __init__(self,JustVisualize=False,from_index=0,to_index=1,frames_size = (512,512)):
         mp_drawing = mp.solutions.drawing_utils
         mp_drawing_styles = mp.solutions.drawing_styles
         mp_hands = mp.solutions.hands
@@ -19,19 +19,19 @@ class Visualizer():
             mp_face_mesh,
             mp_drawing,
             mp_drawing_styles,
-            debuging=visualize
+            debuging=JustVisualize
         )
         imageCropper = ImageCropper(
-            debuging=visualize,
+            debuging=JustVisualize,
             target_size=frames_size
             )
         featuresExtractorFromImage = FeaturesExtractorFromImage(
-            debuging=visualize
+            debuging=JustVisualize
         )
         mediapipeFeaturesExtractor = MediapipeFeaturesExtractor(
             imageCropper,
             featuresExtractorFromImage,
-            debuging=visualize
+            debuging=JustVisualize
             )
       
         self._processVideo = ProcessVideo(
@@ -39,12 +39,14 @@ class Visualizer():
             mediapipeFeaturesExtractor,
             target_size=frames_size
         )
-        self.visualize = visualize
+        self.JustVisualize = JustVisualize
+        self.from_index= from_index
+        self.to_index = to_index
     def process(self,video_path):
         frames =self._processVideo.extractFrames(video_path)
         print("number of frames extracted is : ",len(frames))
-        if self.visualize is not None:
-            landmarks, segmented_frames, frames = self._processVideo.extractLandmarks(np.array(frames)[0:1])
+        if self.JustVisualize is not None:
+            landmarks, segmented_frames, frames = self._processVideo.extractLandmarks(np.array(frames)[self.from_index:self.to_index])
         else:
             landmarks, segmented_frames, frames = self._processVideo.extractLandmarks(np.array(frames))
         landmarks = np.array(landmarks)
