@@ -75,7 +75,7 @@ Signer/
 ---
 
 ## ▶️ Usage
-> see the examples files [visualizaion](h), you can directly [Inference Notebook](h) and [Training Notebook](h)
+> see the examples files [visualizaion](https://github.com/MagdiWaleed/Signer/blob/main/visualizationPipelineExample.py), [inference](https://github.com/MagdiWaleed/Signer/blob/main/inferencePiplineExample.py), and [preprocessor](https://github.com/MagdiWaleed/Signer/blob/main/preprocessor.py), or you can directly run the notebook without setup using [kaggle](https://www.kaggle.com/) by importing the originals notebooks and run them kaggle will handel loading the data and the saved models weights platform [Inference Notebook](https://github.com/MagdiWaleed/Signer/blob/main/source/Inference%20Notebook.ipynb) and [Training Notebook](https://github.com/MagdiWaleed/Signer/blob/main/source/Training%20Notebook.ipynb)
 
 ---
 
