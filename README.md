@@ -1,6 +1,7 @@
 # Signer ✋🤟
 
 Signer is a model that translates signs from video into full sentences through this process:
+<br><br>
 Input Video --> Feature Extraction --> Boundary Detection --> Base Model --> Glosses Predictions --> LLM+PrompEngineer --> Output Text 
 
 **Signer** is an Attention-Based Multi-Fusion deep learning module that translates **sign language** into **text**, helping bridge the communication gap between the Deaf/Hard-of-Hearing community and the hearing world. It combines **computer vision** and **Large Language Model** with advanced deep learning techniques to process videos, extract meaningful patterns from gestures, and produce text translations.
@@ -75,14 +76,41 @@ Signer/
 ---
 
 ## ▶️ Usage
-> see the examples files [visualizaion](https://github.com/MagdiWaleed/Signer/blob/main/visualizationPipelineExample.py), [inference](https://github.com/MagdiWaleed/Signer/blob/main/inferencePiplineExample.py), and [preprocessor](https://github.com/MagdiWaleed/Signer/blob/main/preprocessor.py), or you can directly run the notebook without setup using [kaggle](https://www.kaggle.com/) by importing the originals notebooks and run them kaggle will handel loading the data and the saved models weights platform [Inference Notebook](https://github.com/MagdiWaleed/Signer/blob/main/source/Inference%20Notebook.ipynb) and [Training Notebook](https://github.com/MagdiWaleed/Signer/blob/main/source/Training%20Notebook.ipynb)
+> see the examples files [visualizaion](https://github.com/MagdiWaleed/Signer/blob/main/visualizationPipelineExample.py), [inference](https://github.com/MagdiWaleed/Signer/blob/main/inferencePiplineExample.py), and [preprocessor](https://github.com/MagdiWaleed/Signer/blob/main/preprocessor.py), Or you can directly run the notebook without setup using [kaggle](https://www.kaggle.com/) by importing the original notebooks and run them, [Inference Notebook](https://github.com/MagdiWaleed/Signer/blob/main/source/Inference%20Notebook.ipynb) and [Training Notebook](https://github.com/MagdiWaleed/Signer/blob/main/source/Training%20Notebook.ipynb), Kaggle will handel loading the data and the saved models weights.
 
 ---
 
-## 📌 Roadmap
+## [AUTSL Dataset](https://cvml.ankara.edu.tr/datasets/)
+Ankara University Turkish Sign Language Dataset (AUTSL) is a large-scale, multimode dataset that contains isolated Turkish sign videos. It contains 226 signs that are performed by 43 different signers. There are 38,336 video samples in total. The samples are recorded using Microsoft Kinect v2 in RGB, depth and skeleton formats. We apply some clipping and resizing operations to RGB and depth data and provide them with the resolution of 512×512. The skeleton data contains spatial coordinates, i.e. (x, y), of the 25 junction points on the signer body that are aligned with 512×512 data.
 
-*
-
+We have only used the RGB format and choosing 26 Glosses from them, We have reached 91 Top-1 accuracy in these glosses, that took about 2 weeks to train in kaggle on only these glosses
+Glosses are:
+-    0: 'accident'
+-    1: 'always'
+-    2: 'apologize'
+-    3: 'bed'
+-    4: 'belt'
+-    5: 'breakfast'
+-    6: 'bring'
+-    7: 'forbidden'
+-    8: 'friend'
+-    9: 'full'
+-    10: 'get_well'
+-    11: 'glove'
+-    12: 'good'
+-    13: 'goodbye'
+-    14: 'hurry'
+-    15: 'police'
+-    16: 'same'
+-    17: 'sibling'
+-    18: 'single'
+-    19: 'thanks'
+-    20: 'time'
+-    21: 'tomorrow'
+-    22: 'wait'
+-    23: 'where'
+-    24: 'who'
+-    25: 'why'
 ---
 
 ## 🤝 Contributing
