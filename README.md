@@ -1,8 +1,9 @@
+![Signer Background](https://github.com/user-attachments/assets/e706e4f4-4b89-4d53-8451-de83a1230fca)
 # Signer ✋🤟
 
 Signer is a model that translates signs from video into full sentences through this process:
 <br><br>
-Input Video --> Feature Extraction --> Boundary Detection --> Base Model --> Glosses Predictions --> LLM+PrompEngineer --> Output Text 
+Input Video --> Boundary Detection --> Landmark Estimation --> Feature Extraction --> Base Model --> Glosses Predictions --> LLM+PrompEngineer --> Output Text 
 
 **Signer** is an Attention-Based Multi-Fusion deep learning module that translates **sign language** into **text**, helping bridge the communication gap between the Deaf/Hard-of-Hearing community and the hearing world. It combines **computer vision** and **Large Language Model** with advanced deep learning techniques to process videos, extract meaningful patterns from gestures, and produce text translations.
 
@@ -128,3 +129,4 @@ This project is licensed under the MIT License, allowing free use, modification,
 ## 👤 Author
 
 * **Magdi Waleed** – [GitHub](https://github.com/MagdiWaleed) | [LinkedIn](https://www.linkedin.com/in/magdi-waleed) | [Gmail](m.w.m.khalafallah@gmail.com)
+* **For More Details**: [documentation.pdf](https://github.com/user-attachments/files/22059116/documentation.pdf)
