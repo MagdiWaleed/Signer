@@ -137,4 +137,4 @@ This project is licensed under the MIT License, allowing free use, modification,
 ## 👤 Author
 
 * **Magdi Waleed** – [GitHub](https://github.com/MagdiWaleed) | [LinkedIn](https://www.linkedin.com/in/magdi-waleed) | [Gmail](m.w.m.khalafallah@gmail.com)
-* Feel free to contact with me for more details
+* Feel free to contact me for more details
