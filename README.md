@@ -37,7 +37,7 @@ Input Video --> Boundary Detection --> Landmark Estimation --> Feature Extracti
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/Signer.git
+git clone https://github.com/MagdiWaleed/Signer.git
 cd Signer
 
 # Create and activate virtual environment
